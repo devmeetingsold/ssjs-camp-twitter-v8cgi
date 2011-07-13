@@ -1,0 +1,9 @@
+<div class="followers">
+	$code(if (data.followers) {)
+	Followers:
+	    $code(for (var i = data.followers.length - 1; i >= 0 ; i--) {)
+	    $code(var follower = data.followers[i];)
+	    $include(follower)
+		$code(})
+	$code(})
+</div>

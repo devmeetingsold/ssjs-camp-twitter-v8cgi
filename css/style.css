@@ -1,0 +1,86 @@
+body {
+    background: url(../imgs/ser.jpg) no-repeat;
+    background-position: center;
+    font-family: Comic Sans MS, Verdana;
+}
+
+a:hover {
+   color: rgb(196, 149, 79); 
+   text-decoration: none;
+}
+
+a {
+   color: white; 
+   text-decoration: none;
+}
+
+.header {
+    font-family: 'Sniglet', arial, serif;
+    font-size: 100px;
+    text-align: center;
+    margin: 10px;
+    padding: 50px 0px 0px 10px;
+}
+
+.error {
+    background: rgba(255, 0, 0, 0.5);
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.cheese {
+    background: rgba(142, 72, 2, 0.8);
+}
+
+.expand {
+    position: relative;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.author {
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.timestamp {
+    display: inline;
+    font-size: 9px;
+    color: rgb(196, 149, 79); 
+}
+
+.tweet {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background: rgba(142, 72, 2, 0.8);
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    width: 500px;
+}
+
+.tweets {
+    width: 540px;
+    float: left;
+}
+
+.follower {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background: rgba(72, 72, 2, 0.8);
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    width: 500px;
+}
+
+.followers {
+    width: 540px;
+    float: left;
+}

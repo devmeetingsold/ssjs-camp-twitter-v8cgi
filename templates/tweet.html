@@ -1,0 +1,17 @@
+<div class="tweet">
+    <div>
+        <div class="author"><a href="list.sjs?author=$(tweet.author)">$(tweet.author)</a></div>
+        <span>
+            $code(if (data.username != tweet.author) {)
+                $code(if (data.followers && data.followers.indexOf(tweet.author) == -1) {)
+                    <a href="follow.sjs?username=$(tweet.author)&action=true">dodaj</a>
+                $code(})
+                $code(if (data.followers && data.followers.indexOf(tweet.author) != -1) {)
+                    <a href="follow.sjs?username=$(tweet.author)&action=false">usun</a>
+                $code(})
+            $code(})
+        </span>
+        <div class="timestamp">$(new Date(tweet.timestamp))</div>
+    </div>
+    <div class="msg">$(tweet.msg)</div>
+</div>

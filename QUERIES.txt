@@ -1,0 +1,8 @@
+1. ADD USER
+curl -X PUT http://localhost:5984/users/wiktor -d '{ "followers":["jacek", "szymon", "marek"] }'
+
+2. GET ALL
+
+GET BY AUTHOR
+
+GET FOLLOWED TWEETS

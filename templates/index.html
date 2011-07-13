@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>c h e e s i f y</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Sniglet:800&v1' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    $code(if (data.error) {)
+        <div class="expand error">$(data.error)
+        $code(if (data.link) {)
+        	<a href="$(data.link)">$(data.linkLabel)</a>
+        $code(})
+        </div>
+    $code(})
+    $code(if (data.username) {)
+        <div class="expand cheese">Zalogowany jako $(data.username). <a href="logout.sjs">Wyloguj</a></div>
+    $code(} else {)
+        <div class="expand cheese"><form action="login.sjs" method="get"><input type="text" name="username" /><input type="submit" value="Zaloguj" /></form></div>
+    $code(})
+
+    <div class="header">Cheesify</div>
+
+    $code(if (data.username) {)
+        $include(tweet_new)
+    $code(})
+
+    $include(tweets)
+    
+    $include(followers)
+</body>
+</html>
